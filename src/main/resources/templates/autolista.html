@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.ThymeLeaf.org">
+<head>
+	<title>Autot</title>
+	<meta  http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Autot</h1>
+<table>
+	<tr>
+	<th>Merkki</th>
+	<th>Valmistusvuosi</th>
+	</tr>
+	
+	<tr th:each="auto : ${ autot }">
+	<td th:text="${ auto.getMerkki() }">Merkki</td> <!--/* metodikutsun lyhennysmerkintä ${ auto.merkki }*/-->
+	<td th:text="${ auto.getValmistusvuosi() }">Valmistusvuosi</td><!--/* metodikutsun lyhennysmerkintä ${ auto.valmistusvuosi }*/-->
+	</tr>
+	
+</table>
+</body>
+</html>
