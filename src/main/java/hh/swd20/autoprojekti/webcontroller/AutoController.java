@@ -23,8 +23,8 @@ public class AutoController {
 		//luodaan tyhjä lista
 		
 		List<Auto> autot = new ArrayList<Auto>();
-		autot.add(new Auto("Tesla", 2020));
-		autot.add(new Auto("Saab", 1986));
+		autot.add(new Auto("Tesla", 2020)); //lisätään 1. auto
+		autot.add(new Auto("Saab", 1986)); //lisätään 2. auto
 		
 		//lisätään autolista model-olion mappiin avainarvolla templatea varten
 		model.addAttribute("autot", autot); //1. "keyword" for map 2.dataobject
